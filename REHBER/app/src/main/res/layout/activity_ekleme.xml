@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context="com.example.rehber.EklemeIslemi"
+                                                   android:padding="30dp">
+
+    <TextView
+            android:text="@string/textview_ekleme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_kişiEkle" tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="16dp" tools:text="@string/kisi_ekle"
+            android:textSize="18sp" android:textColor="#673AB7" tools:visibility="visible" android:visibility="visible" tools:ignore="MissingConstraints"/>
+
+    <EditText
+            android:id="@+id/ad_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Ad"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:id="@+id/soyad_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:ems="10"
+            android:hint="Soyad"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/ad_input"
+            app:layout_constraintStart_toStartOf="@+id/ad_input"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/tel_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="204dp"
+            android:ems="10"
+            android:hint="Telefon"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/soyad_input"
+            app:layout_constraintStart_toStartOf="@+id/soyad_input"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/mail_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Mail"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/tel_input"
+            app:layout_constraintStart_toStartOf="@+id/tel_input"
+            app:layout_constraintTop_toBottomOf="@+id/tel_input" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/adres_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Adres"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/mail_input"
+            app:layout_constraintStart_toStartOf="@+id/mail_input"
+            app:layout_constraintTop_toBottomOf="@+id/mail_input" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <Button
+            android:id="@+id/kisi_ekle_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="28dp"
+            android:text="EKLE"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adres_input"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

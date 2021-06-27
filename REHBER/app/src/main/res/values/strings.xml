@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rehber</string>
+    <string name="kisi_ekle">Kişi Ekle</string>
+    <string name="kisi_guncelle">Kişi Bilgilerini Güncelle</string>
+    <string name="textview_ekleme">Kisi Ekle</string>
+    <string name="textview_guncelle">Kisi Bilgilerini Guncelle</string>
+</resources>
+
+
